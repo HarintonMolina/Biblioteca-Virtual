@@ -1,0 +1,7 @@
+{
+  "name": "sanjacintovive",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/PrepararPublicacion.mjs"
+  }
+}

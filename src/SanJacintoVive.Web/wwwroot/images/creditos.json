@@ -1,0 +1,21 @@
+[
+  {
+    "file": "estrada.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:José_Dolores_Estrada.jpg",
+    "author": "Autor desconocido",
+    "license": "Dominio público"
+  },
+  {
+    "file": "mapa.webp",
+    "source": "https://commons.wikimedia.org/wiki/File:Map_of_Central_America,_shewing_the_different_lines_of_Atlantic_%26_Pacific_Communication_by_James_Wyld._Title_in_top_margin_Map_of_the_boundaries_claimed_by_the_different_Central_American_states.jpg",
+    "author": "James Wyld",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Reducción de tamaño, conversión a WebP; recorte y ajuste de color en CSS"
+  },
+  {
+    "file": "hacienda.svg",
+    "author": "San Jacinto Vive",
+    "type": "Interpretación gráfica del entorno; no es una fotografía ni una reconstrucción exacta"
+  }
+]

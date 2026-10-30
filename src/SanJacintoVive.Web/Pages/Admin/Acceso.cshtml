@@ -1,0 +1,4 @@
+@page "/admin/acceso"
+@model SanJacintoVive.Web.Pages.Admin.AccesoModel
+@{ ViewData["Title"] = "Gestión del archivo"; }
+<section class="section-wrap admin-login"><p class="eyebrow red">GESTIÓN DEL ARCHIVO</p><h1>Administración</h1><p>Acceso reservado a la persona responsable del contenido.</p><form method="post" class="editor-form"><div asp-validation-summary="All" class="validation" role="alert"></div><label asp-for="Correo">Correo electrónico</label><input asp-for="Correo" autocomplete="username"/><label asp-for="Clave">Contraseña</label><input asp-for="Clave" autocomplete="current-password"/><button type="submit" class="button blue">Iniciar sesión →</button></form></section>

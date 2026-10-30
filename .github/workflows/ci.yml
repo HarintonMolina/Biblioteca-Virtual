@@ -1,0 +1,39 @@
+name: Verificar museo y servidor
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_DB: sanjacintotests
+          POSTGRES_USER: museo
+          POSTGRES_PASSWORD: museum-ci-only
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U museo -d sanjacintotests"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      TEST_DATABASE: Host=localhost;Port=5432;Database=sanjacintotests;Username=museo;Password=museum-ci-only
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+      - run: dotnet restore tests/SanJacintoVive.Tests/SanJacintoVive.Tests.csproj
+      - run: dotnet build tests/SanJacintoVive.Tests/SanJacintoVive.Tests.csproj -c Release --no-restore
+      - run: dotnet test tests/SanJacintoVive.Tests/SanJacintoVive.Tests.csproj -c Release --no-build --logger trx
+      - run: docker build -t sanjacintovive:verificado .
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: Resultados
+          path: '**/TestResults/*.trx'

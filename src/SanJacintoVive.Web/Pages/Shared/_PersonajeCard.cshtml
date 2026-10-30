@@ -1,0 +1,9 @@
+@model Personaje
+<a class="person-card" asp-page="/Personajes/Detalle" asp-route-slug="@Model.Slug">
+    <div class="person-art person-@Model.Slug">
+        @if(Model.Imagenes.FirstOrDefault() is { } image){<img src="@image.Ruta" alt="@image.Descripcion" loading="lazy" />}
+        else if(Model.Slug == "estrada"){<img src="~/images/estrada.webp" alt="Retrato histórico de José Dolores Estrada" loading="lazy" width="500" height="600" />}
+        else {<span class="person-initial" aria-hidden="true">@(Model.Slug == "flecheros" ? "60" : Model.Nombre.Split(' ')[0][0].ToString())</span><span class="person-art-label">@(Model.Slug == "flecheros" ? "UNA MEMORIA COLECTIVA" : Model.Rol.ToUpperInvariant())</span>}
+        <span class="person-band">@Model.Bando</span>
+    </div><div class="person-caption"><div><h3>@Model.Nombre</h3><p>@Model.Rol</p></div><span>↗</span></div>
+</a>

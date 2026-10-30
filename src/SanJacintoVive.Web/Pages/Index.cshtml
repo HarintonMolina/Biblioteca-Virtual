@@ -1,0 +1,35 @@
+@page "/"
+@model IndexModel
+@{ ViewData["Title"] = "La historia sigue viva"; }
+<section class="hero section-wrap">
+    <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> UN ARCHIVO VIVO DE NICARAGUA</p>
+        <h1>Una historia<br />que todavía<br /><em>nos une.</em></h1>
+        <p class="hero-intro">Hubo un día en que una hacienda cambió la historia. Descubrí las decisiones, las personas y la memoria de San Jacinto.</p>
+        <div class="hero-buttons"><a class="button blue" asp-page="/Batalla">Entrá en la historia <span>↗</span></a><a class="quiet-link" asp-page="/LineaTiempo">Recorrer el tiempo <span>→</span></a></div>
+        <div class="hero-folio"><span>01 / EXPLORAR PARA ENTENDER</span><span>DESLIZÁ PARA DESCUBRIR ↓</span></div>
+    </div>
+    <div class="hero-art" aria-label="Collage con cartografía histórica y una ilustración de la hacienda">
+        <div class="art-coordinates">12° N / 86° O<br />TIPITAPA, NICARAGUA</div>
+        <div class="archive-map"><img src="~/images/mapa.webp" alt="Mapa histórico de Centroamérica de James Wyld" width="1200" height="900" fetchpriority="high" /><span>ARCHIVO CARTOGRÁFICO / SIGLO XIX</span></div>
+        <div class="hero-year" aria-hidden="true">1856</div>
+        <figure class="hacienda-frame"><img src="~/images/hacienda.svg" alt="Ilustración de una casa hacienda de tejas y corredores en el paisaje nicaragüense" width="600" height="430" /><figcaption><span>EL LUGAR DONDE TODO CAMBIÓ</span><b>Hacienda San Jacinto</b><small>Interpretación gráfica del entorno</small></figcaption></figure>
+        <div class="date-stamp"><span>14</span><b>SEPTIEMBRE</b><small>MEMORIA QUE VIVE</small></div>
+        <span class="art-corner">UNA BATALLA.<br />MUCHAS HISTORIAS.</span>
+    </div>
+</section>
+<div class="chapter-strip"><span>MEMORIA</span><i>✳</i><span>IDENTIDAD</span><i>✳</i><span>SOBERANÍA</span><i>✳</i><span>CURIOSIDAD</span><i>✳</i><span>FUTURO</span></div>
+<section class="section-wrap intro-section reveal">
+    <p class="eyebrow red">EL PASADO TIENE MÁS DE UNA ENTRADA</p>
+    <div class="section-heading"><h2>No hace falta memorizar.<br /><em>Hace falta mirar de cerca.</em></h2><p>Seguí una pista, conocé a sus protagonistas y volvé a las fuentes. Este museo se recorre a tu ritmo.</p></div>
+    <div class="chapter-grid">
+        <a class="chapter-card chapter-battle" asp-page="/Batalla"><span class="chapter-number">01 / EL ACONTECIMIENTO</span><div class="card-illustration"><img src="~/images/hacienda.svg" width="500" height="340" alt="" loading="lazy" /></div><div class="chapter-card-bottom"><div><h3>Un día en San Jacinto</h3><p>Entrá al escenario. Entendé las decisiones.</p></div><span class="round-arrow">↗</span></div></a>
+        <a class="chapter-card chapter-time" asp-page="/LineaTiempo"><span class="chapter-number">02 / EL CONTEXTO</span><div class="year-composition" aria-hidden="true"><span>1855</span><i>↓</i><span>1857</span></div><div class="chapter-card-bottom"><div><h3>Todo está conectado</h3><p>Una guerra civil. Una causa compartida.</p></div><span class="round-arrow">↗</span></div></a>
+        <a class="chapter-card chapter-archive" asp-page="/Biblioteca/Index"><span class="chapter-number">03 / LAS EVIDENCIAS</span><div class="paper-composition" aria-hidden="true"><span>EL ARCHIVO<br /><strong>La historia<br />deja huellas.</strong><i>Fuentes · Memorias · Documentos</i></span></div><div class="chapter-card-bottom"><div><h3>Seguí las huellas</h3><p>Leé, compará y hacé tus preguntas.</p></div><span class="round-arrow">↗</span></div></a>
+    </div>
+</section>
+<section class="context-section">
+    <div class="section-wrap context-grid"><div class="context-copy reveal"><p class="eyebrow">1855—1857 / LA GUERRA NACIONAL</p><h2>Antes de una victoria,<br /><em>hubo un país dividido.</em></h2><p>La llegada de William Walker transformó una guerra civil en una amenaza a la soberanía. Conocer lo que pasó antes ayuda a entender por qué San Jacinto sigue importando.</p><a class="button outline-light" asp-page="/LineaTiempo">Ver la línea del tiempo <span>→</span></a></div><div class="timeline-teaser">@foreach(var e in Model.Eventos.Where(x => x.Slug is "llegadawalker" or "presidencia" or "pactoprovidencial" or "sanjacinto")) {<a asp-page="/Eventos/Detalle" asp-route-slug="@e.Slug" class="teaser-event reveal"><time datetime="@e.Fecha.ToString("yyyy-MM-dd")">@e.Fecha.ToString("dd.MM.yyyy")</time><h3>@e.Titulo</h3><span>↗</span></a>}</div></div>
+</section>
+<section class="section-wrap people-section reveal"><p class="eyebrow red">MÁS ALLÁ DE LOS NOMBRES</p><div class="section-heading"><h2>La historia la hacen<br /><em>las personas.</em></h2><a class="text-link" asp-page="/Personajes/Index">Conocer a los protagonistas ↗</a></div><div class="people-grid">@foreach(var p in Model.Personajes){<partial name="_PersonajeCard" model="p" />}</div></section>
+<section class="challenge-section section-wrap reveal"><div><p class="eyebrow">UN RETO PARA TU CURIOSIDAD</p><h2>¿Qué tanto<br /><em>descubriste?</em></h2><p>Ocho preguntas. Nuevas conexiones.<br />Y una explicación detrás de cada respuesta.</p><a class="button blue" asp-page="/Aprender">Acepto el reto <span>↗</span></a></div><div class="challenge-graphic" aria-hidden="true"><span class="big-question">¿?</span><div class="challenge-note">NO SE TRATA DE ADIVINAR.<br /><b>SE TRATA DE APRENDER.</b></div></div></section>

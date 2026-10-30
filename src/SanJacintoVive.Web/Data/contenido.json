@@ -1,0 +1,465 @@
+{
+  "fuentes": [
+    {
+      "id": 1,
+      "slug": "mined",
+      "titulo": "Batalla de San Jacinto",
+      "autor": "Ministerio de Educación",
+      "ano": "2024",
+      "tipo": "Institucional",
+      "enlace": "https://www.mined.gob.ni/fiestas-patrias/2024/06/12/hacienda-san-jacinto/",
+      "referencia": "Ministerio de Educación. (2024, 12 de junio). Batalla de San Jacinto. Plataforma de Fiestas Patrias.",
+      "descripcion": "Relato educativo de la defensa de la hacienda, los frentes del combate y la maniobra de flanqueo.",
+      "nota": "Es una síntesis institucional. Contrasta las cifras y la narración con testimonios de la época y estudios históricos."
+    },
+    {
+      "id": 2,
+      "slug": "arellano",
+      "titulo": "Los dos combates de San Jacinto",
+      "autor": "Jorge Eduardo Arellano",
+      "ano": "s. f.",
+      "tipo": "Secundaria",
+      "enlace": "https://www.mined.gob.ni/biblioteca/wp-content/uploads/2025/09/LOS-DOS-COMBATES-DE-SAN-JACINTO.pdf",
+      "referencia": "Arellano, J. E. (s. f.). Los dos combates de San Jacinto. Biblioteca Digital del MINED.",
+      "descripcion": "Estudio sobre las acciones del 5 y 14 de septiembre que pone en diálogo partes de guerra, prensa y memorias.",
+      "nota": "Discute las cifras de atacantes y recoge distintas versiones del desenlace. El año de carga del archivo no equivale a la fecha de publicación del ensayo."
+    },
+    {
+      "id": 3,
+      "slug": "perez",
+      "titulo": "Memorias de la revolución y de la Guerra Nacional",
+      "autor": "Jerónimo Pérez",
+      "ano": "1975",
+      "tipo": "Primaria",
+      "enlace": "https://www.enriquebolanos.org/coleccion/Colecci%C3%B3n-Guerra-Nacional",
+      "referencia": "Pérez, J. (1975). Memorias para la historia de la revolución de Nicaragua y de la Guerra Nacional. Fondo de Promoción Cultural del Banco de América.",
+      "descripcion": "Memorias de un observador nicaragüense de la época, reeditadas en la colección cultural del Banco de América.",
+      "nota": "Una fuente primaria también tiene una perspectiva. La fecha indicada corresponde a la edición de consulta. El enlace abre la colección documental."
+    },
+    {
+      "id": 4,
+      "slug": "walker",
+      "titulo": "The War in Nicaragua",
+      "autor": "William Walker",
+      "ano": "1860",
+      "tipo": "Primaria",
+      "enlace": "https://archive.org/details/warinnicaragua00walk",
+      "referencia": "Walker, W. (1860). The war in Nicaragua. S. H. Goetzel & Company.",
+      "descripcion": "La interpretación del conflicto escrita por el propio dirigente filibustero después de su derrota.",
+      "nota": "Debe leerse críticamente: es el relato de un participante que intenta justificar sus decisiones. No representa una narración neutral."
+    },
+    {
+      "id": 5,
+      "slug": "kinloch",
+      "titulo": "Identidad nacional e intervención extranjera",
+      "autor": "Frances Kinloch Tijerino",
+      "ano": "2002",
+      "tipo": "Secundaria",
+      "enlace": "https://www.revistas.una.ac.cr/index.php/historia/article/view/12394",
+      "referencia": "Kinloch Tijerino, F. (2002). Identidad nacional e intervención extranjera. Nicaragua, 1840–1930. Revista de Historia, (45), 163–189.",
+      "descripcion": "Análisis académico de las relaciones entre actores locales, intervención extranjera e identidad nacional.",
+      "nota": "Ayuda a comprender cómo se construye la memoria histórica y cómo cambian las interpretaciones con el tiempo."
+    },
+    {
+      "id": 6,
+      "slug": "bolanos",
+      "titulo": "William Walker: El predestinado de los ojos grises",
+      "autor": "Alejandro Bolaños Geyer",
+      "ano": "1993",
+      "tipo": "Secundaria",
+      "enlace": "https://www.enriquebolanos.org/coleccion/Colecci%C3%B3n-Guerra-Nacional",
+      "referencia": "Bolaños Geyer, A. (1993). William Walker: El predestinado de los ojos grises. Tomo III. Nicaragua. Impresión privada.",
+      "descripcion": "Investigación documentada sobre el proyecto de Walker y el desarrollo de la Guerra Nacional.",
+      "nota": "El enlace conduce a la colección Guerra Nacional de la Biblioteca Enrique Bolaños, donde se consultan los volúmenes y documentos relacionados."
+    },
+    {
+      "id": 7,
+      "slug": "pacto",
+      "titulo": "Pacto Providencial",
+      "autor": "Representantes de los partidos legitimista y democrático",
+      "ano": "1856",
+      "tipo": "Primaria",
+      "enlace": "https://guerranacional.enriquebolanos.org/index.php/documentos-varios/item/232-pacto-providencial",
+      "referencia": "Representantes de los partidos legitimista y democrático. (1856, 12 de septiembre). Pacto Providencial. Biblioteca Enrique Bolaños.",
+      "descripcion": "Acuerdo de conciliación política para reunir fuerzas contra el filibusterismo.",
+      "nota": "Conecta la historia política con el esfuerzo militar. Un acuerdo formal no eliminó de inmediato todas las diferencias entre los bandos."
+    },
+    {
+      "id": 8,
+      "slug": "nicaraguense",
+      "titulo": "El Nicaragüense, 1855–1856",
+      "autor": "El Nicaragüense",
+      "ano": "1856",
+      "tipo": "Primaria",
+      "enlace": "https://enriquebolanos.org/media/publicacion/elnicaraguense_vol_02.pdf",
+      "referencia": "El Nicaragüense. (1856). El Nicaragüense [Periódico, volumen II]. Biblioteca Enrique Bolaños.",
+      "descripcion": "Prensa del régimen de Walker que permite examinar decretos y el lenguaje político de sus partidarios.",
+      "nota": "Una publicación vinculada al poder filibustero. Su información exige contraste con otras fuentes; incluye el decreto del 22 de septiembre."
+    },
+    {
+      "id": 9,
+      "slug": "historiografia",
+      "titulo": "La independencia en la historiografía didáctica nicaragüense",
+      "autor": "Frances Kinloch Tijerino",
+      "ano": "2008",
+      "tipo": "Secundaria",
+      "enlace": "https://revistas.ucr.ac.cr/index.php/rdialogos/article/view/2314",
+      "referencia": "Kinloch Tijerino, F. (2008). La independencia en la historiografía didáctica nicaragüense. Diálogos Revista Electrónica de Historia, 9(Especial), 945–980.",
+      "descripcion": "Estudio sobre las maneras de enseñar y narrar la independencia y la formación de la nación.",
+      "nota": "Ofrece herramientas para distinguir los hechos del pasado de las formas en que se recuerdan y enseñan."
+    },
+    {
+      "id": 10,
+      "slug": "flecheros",
+      "titulo": "Reconocimiento de los flecheros de Matagalpa",
+      "autor": "Asamblea Nacional de Nicaragua",
+      "ano": "2012",
+      "tipo": "Institucional",
+      "enlace": "https://noticias.asamblea.gob.ni/asamblea-nacional-declara-heroes-de-la-batalla-de-san-jacinto-a-los-indios-flecheros-de-matagalpa/",
+      "referencia": "Asamblea Nacional de Nicaragua. (2012). Indios flecheros de Matagalpa, declarados héroes nacionales de la Batalla de San Jacinto.",
+      "descripcion": "Explica el reconocimiento nacional de los combatientes indígenas y las evidencias invocadas para su conmemoración.",
+      "nota": "Es una fuente sobre el reconocimiento y la memoria pública. Para el combate de 1856 se contrasta con testimonios y estudios."
+    },
+    {
+      "id": 11,
+      "slug": "patrimonio",
+      "titulo": "La Casa Hacienda de San Jacinto",
+      "autor": "Ministerio de Defensa de Nicaragua",
+      "ano": "2023",
+      "tipo": "Institucional",
+      "enlace": "https://www.midef.gob.ni/servidores-publicos-visitan-la-casa-hacienda-de-san-jacinto/",
+      "referencia": "Ministerio de Defensa de Nicaragua. (2023). Servidores públicos visitan la Casa Hacienda de San Jacinto.",
+      "descripcion": "Acercamiento a la hacienda como espacio de patrimonio y conmemoración.",
+      "nota": "Documenta la memoria actual del lugar; no es un testimonio directo del combate."
+    }
+  ],
+  "personajes": [
+    {
+      "id": 1,
+      "slug": "estrada",
+      "nombre": "José Dolores Estrada",
+      "bando": "Fuerzas nicaragüenses",
+      "rol": "El mando de la defensa",
+      "fechas": "1792–1869",
+      "biografia": "Coronel al mando de las fuerzas nicaragüenses en San Jacinto. Su decisión de organizar la defensa en torno a la casa y sus corrales aprovechó el terreno y obligó a los atacantes a exponerse.\n\nCuando la presión sobre las posiciones aumentó, ordenó una maniobra por la retaguardia. Su papel permite entender la victoria como una combinación de organización, conocimiento del lugar y acción colectiva.\n\nLa memoria nacional lo reconoce como una figura central de la defensa de la soberanía. En septiembre de 1856 su grado era coronel; el tratamiento de general corresponde a su trayectoria posterior.",
+      "fuentes": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "castro",
+      "nombre": "Andrés Castro",
+      "bando": "Fuerzas nicaragüenses",
+      "rol": "Una decisión en medio del combate",
+      "fechas": "Sargento primero",
+      "biografia": "La memoria de San Jacinto recuerda al sargento Andrés Castro por haber derribado con una piedra a un filibustero que intentaba cruzar la defensa, cuando su fusil no estaba cargado. El episodio aparece en relatos del combate y se convirtió en una de las imágenes más conocidas de la historia nacional.\n\nSu acción no explica por sí sola toda la batalla: formó parte del esfuerzo de soldados, oficiales y combatientes indígenas. Conocer a Castro también invita a reconocer a quienes no dejaron retrato ni biografía escrita.",
+      "fuentes": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "flecheros",
+      "nombre": "Flecheros de Matagalpa",
+      "bando": "Combatientes indígenas",
+      "rol": "Una memoria colectiva",
+      "fechas": "Contingente indígena",
+      "biografia": "Los flecheros provenientes de Matagalpa forman parte esencial de la memoria de San Jacinto. El relato más difundido habla de un contingente de 60 hombres que llegó a la hacienda antes del combate, al mando de Francisco Sacasa.\n\nSu presencia recuerda que la defensa de Nicaragua involucró a pueblos indígenas, cuyos nombres individuales no siempre quedaron registrados. El reconocimiento de los flecheros como héroes nacionales amplió la mirada sobre los protagonistas.\n\nLas fuentes no describen del mismo modo su participación ni las cifras de las fuerzas. Leer esas diferencias permite valorar la investigación sin reducir la historia a una única versión.",
+      "fuentes": [
+        1,
+        2,
+        10
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "walker",
+      "nombre": "William Walker",
+      "bando": "Proyecto filibustero",
+      "rol": "De aliado contratado a poder invasor",
+      "fechas": "1824–1860",
+      "biografia": "Aventurero y dirigente filibustero estadounidense que llegó a Nicaragua en 1855, aprovechando la guerra civil entre legitimistas y democráticos. Después de ganar poder militar, ocupó la presidencia en julio de 1856.\n\nEl 22 de septiembre de 1856 decretó la anulación de normas que habían abolido la esclavitud. Su proyecto provocó la resistencia nicaragüense y la intervención de fuerzas centroamericanas. Se rindió el 1 de mayo de 1857.\n\nWalker no estuvo al mando presencial del ataque a San Jacinto. Su libro The War in Nicaragua permite estudiar cómo justificó su actuación, siempre en contraste con otras fuentes.",
+      "fuentes": [
+        3,
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "cole",
+      "nombre": "Byron Cole",
+      "bando": "Fuerzas filibusteras",
+      "rol": "El vínculo con la expedición",
+      "fechas": "1829–1856",
+      "biografia": "Intervino en los acuerdos que facilitaron la llegada de los expedicionarios estadounidenses a Nicaragua. Formó parte del proyecto filibustero y estuvo entre los mandos del ataque a San Jacinto del 14 de septiembre de 1856.\n\nLas fuentes describen de manera distinta algunos detalles de su retirada y muerte. Su trayectoria conecta la contratación de fuerzas extranjeras durante la guerra civil con el posterior enfrentamiento por la soberanía.",
+      "fuentes": [
+        2,
+        3,
+        6
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "oneal",
+      "nombre": "Calvin O’Neal",
+      "bando": "Fuerzas filibusteras",
+      "rol": "Uno de los mandos del asalto",
+      "fechas": "Mayor filibustero",
+      "biografia": "Oficial mencionado entre los mandos de las columnas que atacaron San Jacinto. Su nombre aparece también con variantes ortográficas en las narraciones históricas.\n\nEl ataque pasó de presionar varios frentes a concentrarse sobre una posición vulnerable. Estudiar a los mandos filibusteros ayuda a comprender las decisiones del combate, sin confundir su presencia en la hacienda con la de William Walker.",
+      "fuentes": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "cisne",
+      "nombre": "Liberato Cisne",
+      "bando": "Fuerzas nicaragüenses",
+      "rol": "La maniobra de flanqueo",
+      "fechas": "Capitán",
+      "biografia": "Fue uno de los oficiales enviados a flanquear a los atacantes cuando la defensa atravesaba un momento crítico. La salida por un costado de la hacienda permitió aparecer por la retaguardia filibustera.\n\nSu actuación, junto con la de José Siero, Fonseca y otros combatientes, muestra que la victoria surgió de decisiones coordinadas. La estampida de caballos contribuyó al desconcierto de los atacantes.",
+      "fuentes": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "siero",
+      "nombre": "José Siero",
+      "bando": "Fuerzas nicaragüenses",
+      "rol": "Una salida por la retaguardia",
+      "fechas": "Teniente",
+      "biografia": "Participó entre los oficiales que ejecutaron el movimiento envolvente ordenado por Estrada. Las pequeñas partidas se desplazaron aprovechando el terreno para sorprender a las fuerzas que presionaban la casa.\n\nSu nombre aparece ligado al de Liberato Cisne y al oficial Fonseca. Las variaciones de detalle entre las fuentes recuerdan la importancia de comparar partes de guerra, memorias y estudios posteriores.",
+      "fuentes": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 9,
+      "slug": "fonseca",
+      "nombre": "Tomás Fonseca",
+      "bando": "Fuerzas nicaragüenses",
+      "rol": "Acción coordinada en el desenlace",
+      "fechas": "Oficial",
+      "biografia": "Jorge Eduardo Arellano incluye a Tomás Fonseca entre los participantes de la maniobra final. Otras narraciones identifican al oficial Fonseca sin precisar su nombre o lo registran como Juan Fonseca.\n\nEsta ficha conserva el nombre usado en el ensayo de Arellano y hace visible la diferencia documental. La maniobra de retaguardia es un elemento compartido por los relatos, aunque no todos coinciden en la identificación de cada combatiente.",
+      "fuentes": [
+        1,
+        2
+      ]
+    }
+  ],
+  "eventos": [
+    {
+      "id": 1,
+      "slug": "independencia",
+      "titulo": "La independencia centroamericana",
+      "fecha": "1821-09-15",
+      "lugar": "Centroamérica",
+      "resumen": "El inicio de una nueva etapa política no resolvió los desafíos de construir repúblicas independientes.",
+      "descripcion": "La proclamación de la independencia de Centroamérica en 1821 abrió un proceso de transformaciones políticas. Después vinieron disputas sobre las formas de gobierno, la experiencia federal y la formación de los estados.\n\nLa Batalla de San Jacinto ocurrió 35 años después. Recordar esta distancia ayuda a distinguir la independencia de España de la defensa de la soberanía frente al filibusterismo.",
+      "capitulo": "Antecedentes",
+      "fuentes": [
+        1,
+        9
+      ],
+      "personajes": []
+    },
+    {
+      "id": 2,
+      "slug": "guerracivil",
+      "titulo": "Un país dividido",
+      "fecha": "1854-05-01",
+      "lugar": "León y Granada",
+      "resumen": "La guerra civil enfrentó a legitimistas y democráticos y abrió la puerta a fuerzas extranjeras.",
+      "descripcion": "En mayo de 1854 estalló una guerra civil. Los grupos legitimistas, con centro en Granada, y democráticos, con centro en León, disputaban el poder. El desgaste llevó a dirigentes democráticos a contratar apoyo militar extranjero.\n\nEl acuerdo vinculado a Byron Cole pasó a manos de William Walker. La intervención que comenzó como apoyo a uno de los bandos transformó el conflicto. Esta entrada se sitúa al inicio del mes como referencia del proceso, no como fecha exacta de un único hecho.",
+      "capitulo": "Antecedentes",
+      "fuentes": [
+        3,
+        6,
+        9
+      ],
+      "personajes": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "llegadawalker",
+      "titulo": "Walker llega a El Realejo",
+      "fecha": "1855-06-16",
+      "lugar": "El Realejo",
+      "resumen": "La Falange Americana desembarca en Nicaragua en medio de la guerra civil.",
+      "descripcion": "William Walker llegó al puerto de El Realejo en junio de 1855 con un pequeño contingente de expedicionarios estadounidenses, conocido como la Falange Americana. Se integró al conflicto del lado democrático.\n\nSu presencia no fue un hecho aislado: se relacionaba con el expansionismo filibustero y con el interés estratégico por las rutas que comunicaban los océanos a través de Centroamérica.",
+      "capitulo": "La Guerra Nacional",
+      "fuentes": [
+        3,
+        4,
+        6
+      ],
+      "personajes": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "granada",
+      "titulo": "La toma de Granada",
+      "fecha": "1855-10-13",
+      "lugar": "Granada",
+      "resumen": "El control de la ciudad fortalece el poder militar de Walker.",
+      "descripcion": "La captura de Granada en octubre de 1855 alteró el equilibrio de fuerzas. Un gobierno provisional encabezado por Patricio Rivas convivió con el creciente poder militar de Walker.\n\nEl avance filibustero convirtió las tensiones internas en una amenaza para la autonomía política del país. La resistencia se fue articulando también en el ámbito centroamericano.",
+      "capitulo": "La Guerra Nacional",
+      "fuentes": [
+        3,
+        4,
+        6
+      ],
+      "personajes": [
+        4
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "presidencia",
+      "titulo": "Walker ocupa la presidencia",
+      "fecha": "1856-07-12",
+      "lugar": "Granada",
+      "resumen": "El dirigente filibustero asume el poder tras un proceso electoral controlado por sus fuerzas.",
+      "descripcion": "El 12 de julio de 1856 Walker tomó posesión de la presidencia. Su proyecto de dominación provocó la oposición de sectores nicaragüenses y de los gobiernos vecinos.\n\nLa defensa de la soberanía exigió alianzas entre antiguos adversarios y entre países. Las fuerzas centroamericanas serían decisivas en la campaña que culminó al año siguiente.",
+      "capitulo": "La Guerra Nacional",
+      "fuentes": [
+        3,
+        4,
+        6
+      ],
+      "personajes": [
+        4
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "primercombate",
+      "titulo": "El primer combate en San Jacinto",
+      "fecha": "1856-09-05",
+      "lugar": "Hacienda San Jacinto",
+      "resumen": "Antes de la jornada célebre del 14, la hacienda ya había resistido un ataque.",
+      "descripcion": "Las fuerzas de José Dolores Estrada rechazaron un primer ataque filibustero el 5 de septiembre de 1856. La posición de la hacienda dificultaba el abastecimiento de ganado y víveres de las fuerzas de Walker.\n\nEl título Los dos combates de San Jacinto recuerda esta acción previa, que suele recibir menos atención. Conocerla permite comprender que la victoria del 14 fue parte de una resistencia sostenida.",
+      "capitulo": "San Jacinto",
+      "fuentes": [
+        2,
+        3
+      ],
+      "personajes": [
+        1
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "flecherosllegada",
+      "titulo": "Llegan los flecheros de Matagalpa",
+      "fecha": "1856-09-11",
+      "lugar": "Hacienda San Jacinto",
+      "resumen": "Un contingente indígena se incorpora a las fuerzas reunidas en la hacienda.",
+      "descripcion": "Las narraciones consultadas sitúan el 11 de septiembre la llegada de los flecheros de Matagalpa al mando de Francisco Sacasa. La cifra tradicional es de 60 hombres.\n\nSu memoria amplía la mirada sobre la defensa: no fue solamente la historia de unos pocos mandos. Las diferencias entre las fuentes sobre las cifras y la participación de los grupos siguen siendo parte del estudio histórico.",
+      "capitulo": "San Jacinto",
+      "fuentes": [
+        1,
+        2,
+        10
+      ],
+      "personajes": [
+        3
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "pactoprovidencial",
+      "titulo": "El Pacto Providencial",
+      "fecha": "1856-09-12",
+      "lugar": "León",
+      "resumen": "Legitimistas y democráticos acuerdan reunir fuerzas contra el filibusterismo.",
+      "descripcion": "El acuerdo del 12 de septiembre de 1856 estableció una conciliación entre bandos enfrentados. La defensa frente a Walker creó una causa compartida en medio de las diferencias políticas.\n\nEl pacto se produjo dos días antes de San Jacinto. Es un hecho político distinto de la batalla, pero ambos muestran la importancia de la cooperación en la Guerra Nacional.",
+      "capitulo": "La unión",
+      "fuentes": [
+        3,
+        6,
+        7
+      ],
+      "personajes": []
+    },
+    {
+      "id": 9,
+      "slug": "sanjacinto",
+      "titulo": "La Batalla de San Jacinto",
+      "fecha": "1856-09-14",
+      "lugar": "Hacienda San Jacinto, Tipitapa",
+      "resumen": "La defensa de la hacienda transforma una victoria local en un símbolo nacional.",
+      "descripcion": "Las fuerzas nicaragüenses dirigidas por el coronel José Dolores Estrada resistieron los ataques filibusteros sobre la hacienda y sus corrales. Entre los mandos atacantes estuvieron Byron Cole y Calvin O’Neal.\n\nLa tradición recuerda la acción de Andrés Castro con una piedra durante el combate. El desenlace estuvo ligado a una maniobra de flanqueo por la retaguardia y al desconcierto que produjo una estampida de caballos.\n\nLa cifra más difundida es de 160 defensores y se reconoce la presencia de los flecheros de Matagalpa. Los cronistas difieren sobre la cantidad de atacantes, las bajas y algunos detalles. La victoria fortaleció la resistencia; no puso fin por sí sola a la guerra.",
+      "capitulo": "La batalla",
+      "fuentes": [
+        1,
+        2,
+        3,
+        4,
+        10
+      ],
+      "personajes": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": 10,
+      "slug": "decretoesclavitud",
+      "titulo": "El decreto esclavista",
+      "fecha": "1856-09-22",
+      "lugar": "Granada",
+      "resumen": "Después de San Jacinto, Walker intenta restablecer la esclavitud.",
+      "descripcion": "El 22 de septiembre de 1856 Walker emitió un decreto que anulaba disposiciones de la Asamblea Federal Constituyente, entre ellas las que habían abolido la esclavitud. El texto se publicó en El Nicaragüense.\n\nLa secuencia importa: el decreto es posterior a la batalla del 14. Formó parte de un proyecto de dominación que vinculaba el filibusterismo con los intereses esclavistas de Estados Unidos.",
+      "capitulo": "La Guerra Nacional",
+      "fuentes": [
+        4,
+        6,
+        8
+      ],
+      "personajes": [
+        4
+      ]
+    },
+    {
+      "id": 11,
+      "slug": "rendicion",
+      "titulo": "La rendición de Walker",
+      "fecha": "1857-05-01",
+      "lugar": "San Juan del Sur",
+      "resumen": "La campaña aliada culmina con la salida de Walker de Nicaragua.",
+      "descripcion": "El 1 de mayo de 1857 Walker se rindió y abandonó Nicaragua. La campaña contra su régimen había reunido a combatientes nicaragüenses y fuerzas de Costa Rica, Honduras, Guatemala y El Salvador.\n\nSan Jacinto forma parte de ese proceso amplio. Su recuerdo destaca el valor de la defensa local, mientras la conclusión de la guerra muestra el alcance de la cooperación centroamericana.",
+      "capitulo": "El desenlace",
+      "fuentes": [
+        3,
+        4,
+        6
+      ],
+      "personajes": [
+        4
+      ]
+    }
+  ]
+}

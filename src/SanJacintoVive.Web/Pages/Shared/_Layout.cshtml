@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0038a8" />
+    <title>@ViewData["Title"] · San Jacinto Vive</title>
+    <meta name="description" content="@((string?)ViewData["Description"] ?? "Un museo abierto para descubrir la Guerra Nacional, la Batalla de San Jacinto y las personas que hicieron historia. Explora, conecta y aprende jugando.")" />
+    <link rel="icon" href="~/images/sello.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <script src="~/js/museo.js" asp-append-version="true" defer></script>
+</head>
+<body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+    <header class="site-header">
+        <a class="brand" asp-page="/Index" aria-label="San Jacinto Vive, inicio">
+            <img src="~/images/sello.svg" width="42" height="42" alt="" />
+            <span>SAN JACINTO <b>VIVE</b><small>MUSEO VIRTUAL · NICARAGUA</small></span>
+        </a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="navegacion">Menú <span>☰</span></button>
+        <nav id="navegacion" aria-label="Navegación principal">
+            <a asp-page="/LineaTiempo" data-nav="lineatiempo">La historia</a>
+            <a asp-page="/Batalla" data-nav="batalla">La batalla</a>
+            <a asp-page="/Personajes/Index" data-nav="personajes">Protagonistas</a>
+            <a asp-page="/Biblioteca/Index" data-nav="biblioteca">El archivo</a>
+        </nav>
+        <div class="header-actions"><a class="search-link" asp-page="/Buscar" aria-label="Buscar en el museo"><svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg></a><a class="button small blue" asp-page="/Aprender">Ponete a prueba <span>↗</span></a></div>
+    </header>
+    <main id="contenido" tabindex="-1">@RenderBody()</main>
+    <footer class="site-footer">
+        <div class="footer-top"><a class="footer-wordmark" asp-page="/Index">San Jacinto <em>Vive.</em></a><p>La memoria se cuida<br />cuando se comparte.</p><a class="text-link light" asp-page="/LineaTiempo">Volvé a explorar ↗</a></div>
+        <div class="footer-bottom"><span>Un museo abierto a la curiosidad.</span><div><a asp-page="/Biblioteca/Index">Fuentes y créditos</a><a asp-page="/Privacidad">Privacidad y accesibilidad</a></div><span>NICARAGUA · 1855—1857</span></div>
+    </footer>
+</body>
+</html>

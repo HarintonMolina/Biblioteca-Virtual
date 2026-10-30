@@ -1,0 +1,10 @@
+@page "/lineatiempo"
+@model LineaTiempoModel
+@{ ViewData["Title"] = "Todo está conectado"; }
+<div class="section-wrap page-heading"><p class="eyebrow red">SALA 01 / EL CONTEXTO</p><h1>El tiempo<br /><em>conecta las historias.</em></h1><div class="heading-bottom"><p>De las divisiones internas a la resistencia compartida. Seguí los acontecimientos que ayudan a comprender San Jacinto.</p><span class="catalog-number">1821—1857<br />ARCHIVO CRONOLÓGICO</span></div></div>
+<section class="section-wrap timeline-section" data-filter-list>
+    <div class="filter-bar" aria-label="Filtrar por año"><span>EXPLORAR POR AÑO</span><div class="filter-buttons">@foreach(var year in new[]{"Todos","1821","1854","1855","1856","1857"}) {<button type="button" data-filter="@(year == "Todos" ? "all" : year)" aria-pressed="@(year == "Todos" ? "true" : "false")">@year</button>}</div><span data-count>@Model.Eventos.Count acontecimientos</span></div>
+    <div class="timeline-list">@foreach(var e in Model.Eventos){<article class="timeline-event reveal" data-item data-category="@e.Fecha.Year"><div class="timeline-date"><b>@e.Fecha.Year</b><time datetime="@e.Fecha.ToString("yyyy-MM-dd")">@(e.Slug == "guerracivil" ? "MAYO" : e.Fecha.ToString("dd MMM",System.Globalization.CultureInfo.GetCultureInfo("es")))</time></div><div class="timeline-text"><span class="eyebrow">@e.Capitulo · @e.Lugar</span><h2><a asp-page="/Eventos/Detalle" asp-route-slug="@e.Slug">@e.Titulo <span>↗</span></a></h2><p>@e.Resumen</p></div><span class="timeline-index">@e.Id.ToString("00")</span></article>}</div>
+    <p class="empty-state" data-empty hidden>No hay acontecimientos para este filtro.</p>
+</section>
+<div class="section-wrap next-chapter"><span>LA SIGUIENTE PISTA</span><a asp-page="/Batalla">Un día en San Jacinto <span>→</span></a></div>

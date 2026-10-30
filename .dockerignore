@@ -1,0 +1,14 @@
+.git
+.github
+.openai
+**/bin
+**/obj
+**/AppData
+**/TestResults
+.env
+.env.*
+docs
+tests
+*.zip
+
+dist/

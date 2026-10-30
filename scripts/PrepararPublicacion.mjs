@@ -1,0 +1,11 @@
+import { cp, mkdir, rm, access } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const source = path.join(root, 'docs');
+const destination = path.join(root, 'dist');
+await access(path.join(source, 'index.html'));
+await rm(destination, { recursive: true, force: true });
+await mkdir(destination, { recursive: true });
+await cp(source, destination, { recursive: true });
+process.stdout.write('Museo público preparado en dist.\n');
