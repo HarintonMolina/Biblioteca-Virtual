@@ -9,6 +9,7 @@
     <link rel="icon" href="~/images/sello.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <script src="~/js/museo.js" asp-append-version="true" defer></script>
+    @await RenderSectionAsync("Head", required: false)
 </head>
 <body>
     <a class="skip" href="#contenido">Saltar al contenido</a>
