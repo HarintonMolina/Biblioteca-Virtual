@@ -7,8 +7,8 @@
     <title>Un d&#xED;a en San Jacinto · San Jacinto Vive</title>
     <meta name="description" content="Un museo abierto para descubrir la Guerra Nacional, la Batalla de San Jacinto y las personas que hicieron historia. Explora, conecta y aprende jugando." />
     <link rel="icon" href="../images/sello.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../css/site.css?v=dTUre8tSj4Ql4xLrVQmj93pNdn2U26cGDeSuGuvxgfA" />
-    <script src="../js/museo.js?v=UJ9YC62VGtdZlwrEqPSChcvj-j4YRR5dxZWubCkSdko" defer></script>
+    <link rel="stylesheet" href="../css/site.css?v=LvWrw9i2MqslwgJ-pBpCdUtElXjBlO3Qz7xueA803xQ" />
+    <script src="../js/museo.js?v=Oi0Bnm8eBZyw_a_qMvRCjJt6fLXwKW9GIwEURyvsFfw" defer></script>
 </head>
 <body>
     <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -27,7 +27,252 @@
         </nav>
         <div class="header-actions"><a class="search-link" aria-label="Buscar en el museo" href="../buscar/"><svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg></a><a class="button small blue" href="../aprender/">Ponete a prueba <span>↗</span></a></div>
     </header>
-    <main id="contenido" tabindex="-1"><header class="section-wrap page-heading battle-heading"><p class="eyebrow red">SALA 02 / 14 DE SEPTIEMBRE DE 1856</p><h1>Una hacienda.<br /><em>Una decisión colectiva.</em></h1><div class="heading-bottom"><p>La defensa, el asalto y una maniobra decisiva. Recorré el combate para entender qué ocurrió y por qué lo recordamos.</p><a class="button blue" href="#recorrido">Comenzar el recorrido ↓</a></div></header>
+    <main id="contenido" tabindex="-1"><header class="section-wrap page-heading battle-heading"><p class="eyebrow red">SALA 02 / 14 DE SEPTIEMBRE DE 1856</p><h1>Una hacienda.<br /><em>Una decisión colectiva.</em></h1><div class="heading-bottom"><p>La defensa, el asalto y una maniobra decisiva. Recorré el combate para entender qué ocurrió y por qué lo recordamos.</p><div class="heading-actions"><a class="button blue" href="#animacion">Ver la animación ▶</a><a class="text-link" href="#recorrido">Recorrer las etapas ↓</a></div></div></header>
+<section id="animacion" class="anim section-wrap" aria-labelledby="anim-titulo">
+<div class="anim-head"><p class="eyebrow red">MIRÁ LA BATALLA / ANIMACIÓN NARRADA</p><h2 id="anim-titulo">El mapa<br /><em>cobra vida.</em></h2><p>Doce escenas, unos cinco minutos. La animación narra la versión del parte de Estrada y termina contando en qué no coinciden las fuentes. Podés pausar, saltar entre escenas o leer el guion completo.</p></div>
+<div class="anim-player" data-anim tabindex="-1">
+<div class="anim-stage" data-anim-stage>
+<svg class="anim-svg" viewBox="0 0 1600 900" role="img" aria-labelledby="anim-svg-title" xmlns="http://www.w3.org/2000/svg">
+<title id="anim-svg-title">Mapa animado de la Batalla de San Jacinto. Los subtítulos y el guion describen cada escena.</title>
+<defs>
+<filter id="ap-paper" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="4" result="grano"/><feColorMatrix in="grano" type="matrix" values="0 0 0 0 .32  0 0 0 0 .2  0 0 0 0 .09  .34 0 0 0 -.12" result="motas"/><feTurbulence type="fractalNoise" baseFrequency=".006" numOctaves="4" seed="11" result="manchas"/><feColorMatrix in="manchas" type="matrix" values="0 0 0 0 .55  0 0 0 0 .36  0 0 0 0 .14  .75 0 0 0 -.34" result="tinte"/><feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="tinte"/><feMergeNode in="motas"/></feMerge></filter>
+<filter id="ap-rough" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".04" numOctaves="2" seed="2"/><feDisplacementMap in="SourceGraphic" scale="3" xChannelSelector="R" yChannelSelector="G"/></filter>
+<filter id="ap-fog" x="-20%" y="0" width="140%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".004 .012" numOctaves="3" seed="7"/><feColorMatrix type="matrix" values="0 0 0 0 .97  0 0 0 0 .95  0 0 0 0 .9  1.4 0 0 0 -.45"/></filter>
+<filter id="ap-blur"><feGaussianBlur stdDeviation="7"/></filter>
+<radialGradient id="ap-vignette" cx="50%" cy="50%" r="72%"><stop offset="55%" stop-color="#5a3812" stop-opacity="0"/><stop offset="100%" stop-color="#4a2c0c" stop-opacity=".48"/></radialGradient>
+<linearGradient id="ap-night" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d1626"/><stop offset="1" stop-color="#2a3346"/></linearGradient>
+<pattern id="ap-water" width="22" height="10" patternUnits="userSpaceOnUse"><path d="M2 5q4-3 8 0t8 0" fill="none" stroke="#7d6a48" stroke-width="1"/></pattern>
+<pattern id="ap-tiles" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0v10" stroke="#5b4027" stroke-width="2.2"/></pattern>
+<symbol id="ap-unit" viewBox="-21 -13 42 26"><rect x="-19" y="-11" width="38" height="22" fill="currentColor" fill-opacity=".16" stroke="currentColor" stroke-width="2.6"/><path d="M-19-11 19 11M-19 11 19-11" stroke="currentColor" stroke-width="1.8"/></symbol>
+<symbol id="ap-archer" viewBox="-21 -13 42 26"><rect x="-19" y="-11" width="38" height="22" fill="currentColor" fill-opacity=".16" stroke="currentColor" stroke-width="2.6"/><path d="M-12 7 10-6m-7-1 7 1-1 7M-8-6q-8 6 0 12" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+<symbol id="ap-tree" viewBox="-20 -30 40 40"><path d="M0 8V-4M-13-6c-6-9 2-19 9-16 3-8 15-6 15 2 8 1 9 12 1 15-3 4-10 5-13 2-4 3-11 2-12-3z" fill="#e7d3a7" stroke="#4b3720" stroke-width="2"/></symbol>
+<symbol id="ap-grass" viewBox="-10 -10 20 12"><path d="M-7 0-4-7M0 0V-9M7 0 4-7" fill="none" stroke="#6b5a3a" stroke-width="1.6"/></symbol>
+<symbol id="ap-horse" viewBox="0 0 60 40"><path d="M15 15c8-5 21-5 27 0l6-11 9 4-2 4-6-1-4 11c0 4-3 6-6 6l-3 0 1 10-3 0-2-10h-9l-3 10h-3l1-11c-3-1-5-3-6-6-3 1-6 5-7 10l-2-1c1-7 4-12 8-15z" fill="currentColor"/></symbol>
+<symbol id="ap-ox" viewBox="-14 -12 28 24"><path d="M-12-9q3 6 8 5m16-5q-3 6-8 5M-5-5h10l-1 10q-4 5-8 0z" fill="none" stroke="currentColor" stroke-width="2.4"/></symbol>
+<symbol id="ap-flash" viewBox="-20 -20 40 40"><path d="M0-18 4-5 17-7 7 2l9 11-13-4-3 13-3-13-13 4 9-11-10-9 13 2z" fill="#e2671f"/><circle r="4" fill="#ffd66e"/></symbol>
+<mask id="ap-m-estrada" maskUnits="userSpaceOnUse" x="0" y="0" width="1600" height="900"><path class="draw" data-a="r-estrada" data-dur="2.6" pathLength="1" d="M982 150C965 235 905 305 866 382" fill="none" stroke="#fff" stroke-width="24"/></mask>
+<mask id="ap-m-flecheros" maskUnits="userSpaceOnUse" x="0" y="0" width="1600" height="900"><path class="draw" data-a="r-flecheros" data-dur="2.6" pathLength="1" d="M1004 152C1000 245 935 325 880 390" fill="none" stroke="#fff" stroke-width="24"/></mask>
+<mask id="ap-m-retirada" maskUnits="userSpaceOnUse" x="0" y="0" width="1600" height="900"><path class="draw" data-a="r-mcdonald-out" data-dur="2" pathLength="1" d="M838 432C802 520 770 600 768 676" fill="none" stroke="#fff" stroke-width="24"/></mask>
+<mask id="ap-m-cole" maskUnits="userSpaceOnUse" x="0" y="0" width="1600" height="900"><path class="draw" data-a="r-cole" data-dur="4.5" pathLength="1" d="M770 712 632 696C640 626 676 566 705 528 760 474 815 436 850 414" fill="none" stroke="#fff" stroke-width="24"/></mask>
+<mask id="ap-m-flank" maskUnits="userSpaceOnUse" x="0" y="0" width="1600" height="900"><path class="draw" data-a="f-flank" data-dur="5" pathLength="1" d="M820 316C930 236 1160 214 1300 322 1420 414 1430 640 1330 760 1250 840 1120 852 1030 826" fill="none" stroke="#fff" stroke-width="28"/></mask>
+<mask id="ap-m-horses" maskUnits="userSpaceOnUse" x="0" y="0" width="1600" height="900"><path class="draw" data-a="f-horses" data-dur="3.4" pathLength="1" d="M1400 150C1366 300 1300 452 1250 580 1230 640 1220 690 1214 742" fill="none" stroke="#fff" stroke-width="28"/></mask>
+<mask id="ap-m-huida" maskUnits="userSpaceOnUse" x="0" y="0" width="1600" height="900"><path class="draw" data-a="f-huida" data-dur="3.4" pathLength="1" d="M990 770C800 804 520 786 320 830 200 856 100 874 30 884" fill="none" stroke="#fff" stroke-width="30"/></mask>
+<mask id="ap-m-persec" maskUnits="userSpaceOnUse" x="0" y="0" width="1600" height="900"><path class="draw" data-a="f-persec" data-dur="3" pathLength="1" d="M1060 700C900 742 700 764 470 808" fill="none" stroke="#fff" stroke-width="30"/></mask>
+<mask id="ap-m-orden" maskUnits="userSpaceOnUse" x="0" y="0" width="1600" height="900"><path class="draw" data-a="d-orden" data-dur="3" pathLength="1" d="M790 196C1060 196 1290 320 1290 480S1060 764 790 764 290 640 290 480 520 196 790 196Z" fill="none" stroke="#fff" stroke-width="30"/></mask>
+</defs>
+<rect width="1600" height="900" fill="#efdfb9" filter="url(#ap-paper)"/>
+
+<g class="cam" data-cam="region">
+<g class="lyr" data-a="r-base">
+<g filter="url(#ap-rough)" fill="none" stroke="#4b3720" stroke-linecap="round">
+<path d="M0 392C116 470 222 560 322 676 416 788 470 860 514 900" stroke-width="3"/>
+<path d="M22 430l-14 10m50 20-14 12m50 18-14 13m48 22-13 14m46 22-12 15m44 28-11 15m40 34-10 16m36 40-9 16" stroke-width="1.4" opacity=".7"/>
+<path d="M300 420C330 352 470 330 560 360 640 386 704 432 704 482 692 532 612 562 520 562 420 566 330 542 304 490Z" fill="url(#ap-water)" stroke-width="2.6"/>
+<path d="M820 640C900 598 1050 610 1150 662 1300 732 1500 756 1600 760V900H762C772 820 760 702 820 640Z" fill="url(#ap-water)" stroke-width="2.6"/>
+<path d="M702 500q24 20 30 44t36 40q20 26 52 56" stroke-width="2.2"/>
+<path d="M880 70l26-38 26 38m-8-12 26-36 30 42m30 6 22-30 22 30m-196 70 20-28 20 28m140-10 22-30 24 32m30-60 18-26 20 28" stroke-width="2"/>
+</g>
+<g class="lbl" text-anchor="middle">
+<text x="500" y="468" class="lbl-water">LAGO XOLOTLÁN</text><text x="1230" y="830" class="lbl-water">LAGO COCIBOLCA</text>
+<text x="150" y="760" class="lbl-water" transform="rotate(48 150 760)">OCÉANO PACÍFICO</text>
+</g>
+<g class="town" text-anchor="middle"><circle cx="190" cy="300" r="8"/><text x="190" y="280">León</text><circle cx="470" cy="588" r="8"/><text x="470" y="624">Managua</text><circle cx="706" cy="520" r="7"/><text x="660" y="508" text-anchor="end">Tipitapa</text><circle cx="632" cy="696" r="7"/><text x="610" y="730" text-anchor="end">Masaya</text><circle cx="772" cy="708" r="9"/><text x="796" y="742">Granada</text><circle cx="984" cy="140" r="8"/><text x="984" y="178">Matagalpa</text></g>
+<text x="1490" y="880" class="lbl-note" text-anchor="end">ESQUEMA SIN ESCALA</text>
+</g>
+<g class="lyr" data-a="r-sj"><g class="pulse"><circle cx="858" cy="404" r="30"/></g><path d="M838 412h40v-18l-20-12-20 12z" fill="#e8d6ae" stroke="#3a2715" stroke-width="3"/><text x="900" y="404" class="lbl-strong">HACIENDA SAN JACINTO</text><text x="900" y="432" class="lbl-sub">Llanos de Ostócal</text></g>
+<g class="lyr c-red" data-a="r-walker"><path d="M772 678l7 15 17 2-12 11 3 17-15-8-15 8 3-17-12-11 17-2z" fill="currentColor"/><text x="830" y="690" class="lbl-strong">WILLIAM WALKER</text><text x="830" y="716" class="lbl-sub">Granada, 1855–1856</text></g>
+<g class="lyr c-red" data-a="r-ganado"><use href="#ap-ox" x="870" y="330" width="34" height="28"/><use href="#ap-ox" x="930" y="410" width="34" height="28"/><use href="#ap-ox" x="790" y="350" width="34" height="28"/><path d="M886 360C880 480 820 600 780 690M944 440C900 560 830 640 786 694M806 380C790 480 780 600 774 688" fill="none" stroke="currentColor" stroke-width="2.4" stroke-dasharray="2 9" stroke-linecap="round" class="flow"/><text x="1000" y="470" class="lbl-sub">Ganado para las tropas de Walker</text></g>
+<g class="lyr c-blue" data-a="r-pacto"><path d="M190 270l7 15 17 2-12 11 3 17-15-8-15 8 3-17-12-11 17-2z" fill="currentColor"/><text x="190" y="214" class="lbl-strong" text-anchor="middle">PACTO PROVIDENCIAL</text><text x="190" y="240" class="lbl-sub" text-anchor="middle">León · 12 de septiembre</text></g>
+<g class="lyr c-blue" data-a="r-estrada"><path d="M982 150C965 235 905 305 866 382" fill="none" stroke="currentColor" stroke-width="5" stroke-dasharray="14 9" mask="url(#ap-m-estrada)" data-head="1"/><text x="920" y="260" class="lbl-strong" text-anchor="end">ESTRADA</text><text x="920" y="286" class="lbl-sub" text-anchor="end">desde Matagalpa</text></g>
+<g class="lyr c-red" data-a="r-mcdonald"><path d="M778 690C786 600 816 512 846 426" fill="none" stroke="currentColor" stroke-width="5" class="draw" pathLength="1" data-dur="2.2" data-head="1"/><text x="740" y="600" class="lbl-strong" text-anchor="end">McDONALD · 5 SEP</text></g>
+<g class="lyr c-red" data-a="r-mcdonald-out"><path d="M838 432C802 520 770 600 768 676" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="8 8" mask="url(#ap-m-retirada)" data-head="1"/><text x="880" y="560" class="lbl-sub">retirada</text></g>
+<g class="lyr c-gold" data-a="r-flecheros"><path d="M1004 152C1000 245 935 325 880 390" fill="none" stroke="currentColor" stroke-width="5" stroke-dasharray="4 8" stroke-linecap="round" mask="url(#ap-m-flecheros)" data-head="1"/><text x="1010" y="270" class="lbl-strong">60 FLECHEROS</text><text x="1010" y="296" class="lbl-sub">de Matagalpa · 11 de sept.</text></g>
+<g class="lyr c-red" data-a="r-cole"><path id="ap-p-cole" d="M770 712 632 696C640 626 676 566 705 528 760 474 815 436 850 414" fill="none" stroke="currentColor" stroke-width="5" stroke-dasharray="14 9" mask="url(#ap-m-cole)" data-head="1"/><text x="712" y="626" class="lbl-strong">BYRON COLE</text><text x="712" y="652" class="lbl-sub">sale de Granada</text></g>
+<g class="lyr c-red" data-a="r-camp"><path d="M690 486l18-30 18 30z" fill="#e8d6ae" stroke="currentColor" stroke-width="3"/><text x="600" y="455" class="lbl-sub" text-anchor="end">Campamento · noche del 13</text></g>
+<g class="actor c-red" data-a="r-token" data-actor="token"><circle r="13" fill="currentColor"/><circle r="20" fill="none" stroke="currentColor" stroke-width="2"/></g>
+</g>
+
+<g class="cam" data-cam="field">
+<g class="lyr" data-a="f-base">
+<g filter="url(#ap-rough)" fill="none" stroke="#4b3720" stroke-linecap="round" stroke-linejoin="round">
+<path class="draw" pathLength="1" data-dur="3" d="M1010 52C1120 4 1390-8 1580 66M1050 104C1160 60 1370 50 1560 120M1100 156C1200 120 1350 112 1520 172M1170 206C1240 182 1340 176 1450 218" stroke-width="2" opacity=".75"/>
+<path class="draw" pathLength="1" data-dur="2.6" d="M700 462C664 560 500 640 340 712 220 766 100 838 10 896" stroke-width="20" stroke="#cdb688"/>
+<path class="fade-in" d="M700 462C664 560 500 640 340 712 220 766 100 838 10 896" stroke-width="2" stroke-dasharray="10 7"/>
+<path class="stone fade-in" d="M430 300H680V520L440 532Z"/>
+<path class="stone fade-in" d="M1140 600C1200 590 1262 560 1324 516"/>
+<rect class="draw" pathLength="1" data-dur="1.6" x="680" y="320" width="240" height="140" stroke-width="2"/>
+<rect x="706" y="346" width="188" height="88" fill="url(#ap-tiles)" stroke-width="3.4" class="fade-in"/>
+<path class="draw" pathLength="1" data-dur="2" d="M920 460H1140V640H920Z" stroke-width="3"/>
+<path class="posts fade-in" d="M920 460H1140V640H920Z"/>
+</g>
+<g class="trees"><use href="#ap-tree" x="1220" y="262" width="56" height="56"/><use href="#ap-tree" x="1290" y="232" width="48" height="48"/><use href="#ap-tree" x="1370" y="270" width="60" height="60"/><use href="#ap-tree" x="1440" y="330" width="52" height="52"/><use href="#ap-tree" x="1350" y="380" width="56" height="56"/><use href="#ap-tree" x="1480" y="430" width="60" height="60"/><use href="#ap-tree" x="1400" y="480" width="52" height="52"/><use href="#ap-tree" x="1470" y="560" width="58" height="58"/><use href="#ap-tree" x="1380" y="590" width="50" height="50"/><use href="#ap-tree" x="1450" y="660" width="56" height="56"/><use href="#ap-tree" x="1340" y="700" width="52" height="52"/><use href="#ap-tree" x="1500" y="740" width="56" height="56"/><use href="#ap-tree" x="300" y="300" width="50" height="50"/><use href="#ap-tree" x="230" y="380" width="56" height="56"/><use href="#ap-tree" x="140" y="300" width="48" height="48"/><use href="#ap-tree" x="560" y="200" width="52" height="52"/><use href="#ap-tree" x="660" y="160" width="46" height="46"/><use href="#ap-tree" x="90" y="560" width="54" height="54"/></g>
+<g class="grass"><use href="#ap-grass" x="380" y="610" width="30" height="18"/><use href="#ap-grass" x="560" y="700" width="30" height="18"/><use href="#ap-grass" x="700" y="790" width="30" height="18"/><use href="#ap-grass" x="880" y="720" width="30" height="18"/><use href="#ap-grass" x="1180" y="790" width="30" height="18"/><use href="#ap-grass" x="1240" y="660" width="30" height="18"/><use href="#ap-grass" x="980" y="840" width="30" height="18"/><use href="#ap-grass" x="420" y="820" width="30" height="18"/><use href="#ap-grass" x="250" y="560" width="30" height="18"/><use href="#ap-grass" x="1050" y="380" width="30" height="18"/><use href="#ap-grass" x="560" y="250" width="30" height="18"/><use href="#ap-grass" x="1120" y="300" width="30" height="18"/></g>
+<g class="lbl">
+<text x="1290" y="140" text-anchor="middle" class="lbl-strong">CERRO SAN JACINTO</text>
+<text x="800" y="306" text-anchor="middle" class="lbl-strong">CASA HACIENDA</text>
+<text x="555" y="566" text-anchor="middle" class="lbl-strong">CORRAL DE PIEDRA</text>
+<text x="1060" y="446" text-anchor="middle" class="lbl-strong">CORRAL DE MADERA</text>
+<text x="1236" y="530" text-anchor="middle" class="lbl-sub" transform="rotate(-24 1236 530)">cerco de piedra</text>
+<text x="1430" y="820" text-anchor="middle" class="lbl-sub">monte</text>
+<text x="200" y="770" class="lbl-sub" transform="rotate(-29 200 770)">camino viejo a Tipitapa</text>
+<text x="1490" y="880" class="lbl-note" text-anchor="end">ESQUEMA DIDÁCTICO SIN ESCALA</text>
+</g>
+</g>
+<g class="lyr c-blue" data-a="d-orden"><path d="M790 196C1060 196 1290 320 1290 480S1060 764 790 764 290 640 290 480 520 196 790 196Z" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="3 10" stroke-linecap="round" mask="url(#ap-m-orden)"/><text x="790" y="186" text-anchor="middle" class="lbl-sub">alcance de un tiro de pistola</text></g>
+<g class="lyr c-blue" data-a="d-cisne"><use href="#ap-unit" x="476" y="350" width="48" height="30"/><use href="#ap-unit" x="566" y="420" width="48" height="30"/><use href="#ap-unit" x="476" y="470" width="48" height="30"/><text x="555" y="340" text-anchor="middle" class="tag">Cisne</text></g>
+<g class="lyr c-blue" data-a="d-aviles"><use href="#ap-unit" x="726" y="374" width="48" height="30"/><use href="#ap-unit" x="826" y="374" width="48" height="30"/><text x="800" y="426" text-anchor="middle" class="tag">Avilés</text></g>
+<g class="lyr c-blue" data-a="d-sacasa"><use href="#ap-archer" x="946" y="500" width="48" height="30"/><use href="#ap-unit" x="1036" y="500" width="48" height="30"/><use href="#ap-archer" x="1046" y="570" width="48" height="30"/><use href="#ap-unit" x="946" y="570" width="48" height="30"/><text x="1030" y="556" text-anchor="middle" class="tag">Sacasa</text></g>
+<g class="lyr c-blue" data-a="d-estrada"><path d="M932 330v-74" stroke="currentColor" stroke-width="4"/><path d="M934 258h56l-12 14 12 14h-56z" fill="currentColor"/><text x="1000" y="250" class="tag">Estrada</text></g>
+<g class="lyr" data-a="f-salmeron"><g class="pulse"><circle cx="600" cy="540" r="26"/></g><circle cx="600" cy="540" r="10" fill="#3a2715"/><text x="620" y="600" class="tag">Cabo Salmerón: ¡el enemigo!</text></g>
+<g class="lyr c-blue" data-a="d-refuerzo"><path d="M870 440C910 470 940 500 984 536" fill="none" stroke="currentColor" stroke-width="5" class="draw" pathLength="1" data-dur="1.4" data-head="1"/><text x="760" y="510" class="tag" text-anchor="middle">Vélez · Eva · Solís</text></g>
+<g class="lyr" data-a="f-breach"><path d="M990 628h70v24h-70z" fill="#e8d6ae"/><path d="M992 640l-14-22m30 26 6-28m22 30 18-24m6 18 14-6" stroke="#9e1f2c" stroke-width="3" fill="none"/></g>
+<g class="lyr c-red" data-a="f-arr-cole"><path d="M940 840C960 780 990 730 1012 676" fill="none" stroke="currentColor" stroke-width="7" class="draw" pathLength="1" data-dur="1.6" data-head="1"/></g>
+<g class="lyr c-red" data-a="f-arr-oneal"><path d="M720 780C760 700 790 620 800 500" fill="none" stroke="currentColor" stroke-width="7" class="draw" pathLength="1" data-dur="1.6" data-head="1"/></g>
+<g class="lyr c-red" data-a="f-arr-watkins"><path d="M1320 800C1260 740 1210 690 1162 630" fill="none" stroke="currentColor" stroke-width="7" class="draw" pathLength="1" data-dur="1.6" data-head="1"/></g>
+<g class="lyr c-gold" data-a="f-flank"><path id="ap-p-flank" d="M820 316C930 236 1160 214 1300 322 1420 414 1430 640 1330 760 1250 840 1120 852 1030 826" fill="none" stroke="currentColor" stroke-width="6" stroke-dasharray="16 10" mask="url(#ap-m-flank)" data-head="1"/></g>
+<g class="lyr c-gold" data-a="f-horses"><path id="ap-p-horses" d="M1400 150C1366 300 1300 452 1250 580 1230 640 1220 690 1214 742" fill="none" stroke="currentColor" stroke-width="4" stroke-dasharray="3 9" stroke-linecap="round" mask="url(#ap-m-horses)"/></g>
+<g class="lyr c-red" data-a="f-huida"><path d="M990 770C800 804 520 786 320 830 200 856 100 874 30 884" fill="none" stroke="currentColor" stroke-width="6" stroke-dasharray="18 10" mask="url(#ap-m-huida)" data-head="1"/></g>
+<g class="lyr c-blue" data-a="f-persec"><path d="M1060 700C900 742 700 764 470 808" fill="none" stroke="currentColor" stroke-width="5" stroke-dasharray="10 8" mask="url(#ap-m-persec)" data-head="1"/><text x="800" y="726" class="tag" text-anchor="middle">Sandoval · Vélez</text></g>
+<g class="fx" data-a="fx-fire"><use href="#ap-flash" x="908" y="630" width="40" height="40"/><use href="#ap-flash" x="992" y="626" width="40" height="40"/><use href="#ap-flash" x="1080" y="628" width="40" height="40"/><use href="#ap-flash" x="1130" y="590" width="40" height="40"/><use href="#ap-flash" x="740" y="446" width="40" height="40"/><use href="#ap-flash" x="830" y="446" width="40" height="40"/><use href="#ap-flash" x="660" y="470" width="40" height="40"/><use href="#ap-flash" x="980" y="700" width="34" height="34"/><use href="#ap-flash" x="780" y="560" width="34" height="34"/><use href="#ap-flash" x="1180" y="660" width="34" height="34"/></g>
+<g class="fx" data-a="fx-smoke" filter="url(#ap-blur)"><circle cx="930" cy="640" r="26"/><circle cx="1010" cy="634" r="30"/><circle cx="1100" cy="640" r="26"/><circle cx="760" cy="460" r="28"/><circle cx="850" cy="456" r="24"/><circle cx="1150" cy="604" r="24"/><circle cx="680" cy="484" r="22"/></g>
+<g class="actor c-red" data-a="a-cole" data-actor="cole"><use href="#ap-unit" x="-50" y="-16" width="48" height="30"/><use href="#ap-unit" x="2" y="-16" width="48" height="30"/><use href="#ap-unit" x="-24" y="20" width="48" height="30"/><text y="-28" text-anchor="middle" class="tag">Cole · Milligan</text></g>
+<g class="actor c-red" data-a="a-oneal" data-actor="oneal"><use href="#ap-unit" x="-50" y="-16" width="48" height="30"/><use href="#ap-unit" x="2" y="-16" width="48" height="30"/><text y="42" text-anchor="middle" class="tag">O’Neal</text></g>
+<g class="actor c-red" data-a="a-watkins" data-actor="watkins"><use href="#ap-unit" x="-50" y="-16" width="48" height="30"/><use href="#ap-unit" x="2" y="-16" width="48" height="30"/><text y="42" text-anchor="middle" class="tag">Watkins</text></g>
+<g class="actor c-gold" data-a="a-flank" data-actor="flank"><use href="#ap-unit" x="-50" y="-16" width="48" height="30"/><use href="#ap-unit" x="2" y="-16" width="48" height="30"/><text y="-26" text-anchor="middle" class="tag">Cisne · Siero · Fonseca</text></g>
+<g class="actor c-gold" data-a="a-horses" data-actor="horses"><use href="#ap-horse" x="-70" y="-30" width="60" height="40"/><use href="#ap-horse" x="-4" y="-44" width="60" height="40"/><use href="#ap-horse" x="-30" y="4" width="60" height="40"/><use href="#ap-horse" x="30" y="-4" width="60" height="40"/></g>
+<g class="lyr" data-a="f-viva"><text x="1240" y="880" text-anchor="middle" class="shout">¡Viva Nicaragua!</text></g>
+<g class="lyr c-red" data-a="f-cole-fin"><path d="M120 772v40m-14-26h28" stroke="currentColor" stroke-width="4"/><text x="150" y="790" class="tag">Byron Cole muere en la huida</text><text x="150" y="816" class="lbl-sub">rumbo a San Ildefonso</text></g>
+<g class="lyr" data-a="f-botin"><rect x="1130" y="290" width="420" height="214" fill="#efe0bd" stroke="#3a2715" stroke-width="2"/><rect x="1138" y="298" width="404" height="198" fill="none" stroke="#3a2715" stroke-width="1"/><text x="1340" y="338" text-anchor="middle" class="lbl-strong">BOTÍN SEGÚN EL PARTE</text><text x="1166" y="380" class="ledger">32 rifles</text><text x="1166" y="414" class="ledger">25 pistolas de cilindro</text><text x="1166" y="448" class="ledger">47 cartucheras</text><text x="1166" y="482" class="ledger">20 bestias</text></g>
+</g>
+
+<g class="ov fog" data-a="o-fog"><rect x="-300" y="380" width="2200" height="520" filter="url(#ap-fog)"/></g>
+<rect class="ov" data-a="o-night" width="1600" height="900" fill="url(#ap-night)"/>
+<rect class="ov" data-a="o-dim" width="1600" height="900" fill="#e8d6ae"/>
+
+<g class="ov" data-a="o-title">
+<rect x="330" y="220" width="940" height="400" fill="#efe0bd" stroke="#3a2715" stroke-width="3"/><rect x="346" y="236" width="908" height="368" fill="none" stroke="#3a2715" stroke-width="1.2"/>
+<path d="M346 236l40 0-40 40zm908 0-40 0 40 40zM346 604l40 0-40-40zm908 0-40 0 40-40z" fill="#3a2715"/>
+<text x="800" y="318" text-anchor="middle" class="t-small">BATALLA DE</text>
+<text x="800" y="452" text-anchor="middle" class="t-big">San Jacinto</text>
+<path d="M560 490h480" stroke="#9e1f2c" stroke-width="2"/><path d="M790 490l10-10 10 10-10 10z" fill="#9e1f2c"/>
+<text x="800" y="550" text-anchor="middle" class="t-small">14 DE SEPTIEMBRE DE 1856</text>
+</g>
+
+<g class="ov" data-a="o-castro">
+<circle cx="1180" cy="400" r="250" fill="#efe0bd" stroke="#3a2715" stroke-width="4"/><circle cx="1180" cy="400" r="234" fill="none" stroke="#3a2715" stroke-width="1.4"/>
+<path id="ap-arc-castro" d="M984 400A196 196 0 0 1 1376 400" fill="none"/>
+<g transform="translate(14 -14)">
+<text class="lbl-strong"><textPath href="#ap-arc-castro" startOffset="50%" text-anchor="middle">SARGENTO PRIMERO ANDRÉS CASTRO</textPath></text>
+<g class="castro-fig" fill="none" stroke="#3a2715" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="1112" cy="366" r="18" fill="#3a2715" stroke="none"/>
+<path d="M1106 390 1092 470M1100 404 1066 372 1080 326M1100 408 1140 428 1162 410M1092 470 1114 520 1124 572M1092 470 1056 514 1046 572"/>
+</g>
+<g class="lyr" data-a="o-castro-tiro"><path class="arc" d="M1092 300C1160 240 1250 260 1290 340" fill="none" stroke="#3a2715" stroke-width="3" stroke-dasharray="6 9"/><path class="impact" d="M1290 322l6 12 13-3-7 11 10 9-13 1-2 13-7-11-12 6 5-12-11-8 13-2z" fill="#9e1f2c"/></g>
+<path class="castro-stone" d="M1072 300l14-6 12 7 1 14-12 8-14-4z" fill="#5b4027"/>
+<path d="M1010 588h340" stroke="#5b4027" stroke-width="6" stroke-dasharray="20 6"/>
+</g>
+<path d="M890 668h580l-24 46 24 46H890l24-46z" fill="#efe0bd" stroke="#3a2715" stroke-width="2.4"/>
+<text x="1180" y="712" text-anchor="middle" class="ledger">«botó a pedradas a un americano»</text>
+<text x="1180" y="742" text-anchor="middle" class="lbl-sub">Parte de José Dolores Estrada, 1856</text>
+</g>
+
+<g class="ov" data-a="o-debate">
+<rect x="160" y="90" width="1280" height="720" fill="#efe0bd" stroke="#3a2715" stroke-width="3"/><rect x="174" y="104" width="1252" height="692" fill="none" stroke="#3a2715" stroke-width="1.2"/>
+<text x="800" y="170" text-anchor="middle" class="t-mid">¿Qué cuentan las fuentes?</text>
+<g class="lbl-strong"><text x="210" y="240">TEMA</text><text x="470" y="240">PARTE DE ESTRADA (1856)</text><text x="900" y="240">OTROS TESTIMONIOS Y ESTUDIOS</text></g>
+<path d="M200 256h1200" stroke="#3a2715" stroke-width="2"/>
+<g class="lyr" data-a="deb-1"><g class="ledger"><text x="210" y="304">Atacantes</text><text x="470" y="304">Más de doscientos</text><text x="900" y="304">300 en la tradición · unos 63 (Werner)</text><text x="210" y="362">Duración</text><text x="470" y="362">Cuatro horas de fuego</text><text x="900" y="362">Quizás 10 minutos (Werner, 2008)</text><text x="210" y="420">Filibusteros caídos</text><text x="470" y="420">27</text><text x="900" y="420">12 (El Nicaragüense) · 37 (Eva)</text></g><path d="M200 330h1200M200 388h1200M200 446h1200" stroke="#3a2715" stroke-width=".8" opacity=".5"/></g>
+<g class="lyr" data-a="deb-2"><g class="ledger"><text x="210" y="478">Flanqueo</text><text x="470" y="478">Cisne, Siero, Fonseca</text><text x="900" y="478">Sandoval (Eva) · Centeno (sus memorias)</text><text x="210" y="536">Estampida</text><text x="470" y="536">No la menciona</text><text x="900" y="536">La recuerdan Alegría y Siero</text></g><path d="M200 504h1200M200 562h1200" stroke="#3a2715" stroke-width=".8" opacity=".5"/></g>
+<g class="lyr" data-a="deb-3"><text x="800" y="640" text-anchor="middle" class="t-small">LA GUERRA CONTINÚA · RENDICIÓN DE WALKER: 1 DE MAYO DE 1857</text></g>
+<g class="lyr" data-a="deb-4"><circle cx="800" cy="718" r="46" fill="#0038a8"/><circle cx="800" cy="718" r="38" fill="none" stroke="#e9eff9" stroke-width="1.4"/><text x="800" y="712" text-anchor="middle" class="seal">14 · IX</text><text x="800" y="736" text-anchor="middle" class="seal seal-sm">1856</text></g>
+</g>
+
+<g class="frame" pointer-events="none">
+<rect width="1600" height="900" fill="url(#ap-vignette)"/>
+<rect x="18" y="18" width="1564" height="864" fill="none" stroke="#3a2715" stroke-width="3"/><rect x="28" y="28" width="1544" height="844" fill="none" stroke="#3a2715" stroke-width="1"/>
+<g transform="translate(1500 110)" class="rose"><circle r="46" fill="none" stroke="#3a2715" stroke-width="1.4"/><path d="M0-62 9-9 62 0 9 9 0 62-9 9-62 0-9-9z" fill="#efe0bd" stroke="#3a2715" stroke-width="2"/><path d="M0-62 9-9H-9z" fill="#9e1f2c"/><text y="-70" text-anchor="middle" class="lbl-strong">N</text></g>
+</g>
+</svg>
+<div class="anim-chapter" data-anim-chapter aria-hidden="true"><span data-anim-hora></span><strong data-anim-nombre></strong></div>
+<div class="anim-caption" data-anim-caption><p data-anim-texto></p></div>
+<div class="anim-cover" data-anim-cover><button type="button" class="anim-start" data-anim-start><span class="anim-start-icon" aria-hidden="true">▶</span><span><strong>Ver la batalla</strong><small>12 escenas · unos 5 minutos · con narración</small></span></button><a class="anim-cover-link" href="#recorrido" data-anim-fin hidden>Recorrer las etapas con sus fuentes ↓</a></div>
+</div>
+<div class="anim-controls" role="group" aria-label="Controles de la animación">
+<button type="button" class="anim-btn" data-anim-prev aria-label="Escena anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5v14M19 5 9 12l10 7z"/></svg></button>
+<button type="button" class="anim-btn anim-play" data-anim-play aria-label="Reproducir"><svg viewBox="0 0 24 24" aria-hidden="true" class="i-play"><path d="M7 4l13 8-13 8z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" class="i-pause"><path d="M7 4h4v16H7zM14 4h4v16h-4z"/></svg></button>
+<button type="button" class="anim-btn" data-anim-next aria-label="Escena siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 5v14M5 5l10 7-10 7z"/></svg></button>
+<ol class="anim-timeline" data-anim-timeline aria-label="Escenas"></ol>
+<button type="button" class="anim-btn anim-voice" data-anim-voice aria-pressed="true" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/><path class="wave" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none"/></svg><span>Voz</span></button>
+<button type="button" class="anim-btn" data-anim-full aria-label="Pantalla completa" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none"/></svg></button>
+</div>
+<p class="sr-only" role="status" data-anim-status></p>
+</div>
+<details class="anim-guion" data-anim-guion open>
+<summary>Leer el guion completo</summary>
+<ol data-guion>
+<li data-escena="1" data-hora="14 sep 1856"><h3>San Jacinto</h3>
+<p>Nicaragua, septiembre de 1856.</p>
+<p>En una hacienda ganadera al noreste de Managua, un puñado de nicaragüenses están a punto de cambiar el rumbo de la Guerra Nacional.</p>
+<p>Esta es la historia de la Batalla de San Jacinto.</p></li>
+<li data-escena="2" data-hora="1855 — 1856"><h3>Un país ocupado</h3>
+<p>Desde 1855, el filibustero estadounidense William Walker controla Granada, y en julio de 1856 se ha hecho proclamar presidente de Nicaragua.</p>
+<p>Sus tropas se alimentan del ganado de las haciendas que rodean el lago Xolotlán.</p>
+<p>El 12 de septiembre, en León, legitimistas y democráticos firman el Pacto Providencial: dejan de lado su guerra civil para enfrentar juntos al invasor.</p></li>
+<li data-escena="3" data-hora="5 sep 1856"><h3>El primer combate</h3>
+<p>Por órdenes del general Tomás Martínez, el coronel José Dolores Estrada baja desde Matagalpa para cortar ese abastecimiento.</p>
+<p>Se instala en la hacienda San Jacinto, en los llanos de Ostócal.</p>
+<p>El 5 de septiembre, un escuadrón filibustero a caballo, al mando de Edmund McDonald, ataca al amanecer.</p>
+<p>Tras unas tres horas de fuego, los atacantes se retiran hacia Granada. Walker prepara la revancha.</p></li>
+<li data-escena="4" data-hora="11 — 13 sep 1856"><h3>Refuerzos y amenaza</h3>
+<p>El 11 de septiembre llegan a San Jacinto unos sesenta flecheros indígenas de Matagalpa.</p>
+<p>Mientras tanto, Byron Cole, uno de los hombres más cercanos a Walker, sale de Granada con una columna de rifleros.</p>
+<p>Pasa por Masaya y, el 13, acampa en Tipitapa. San Jacinto queda a pocas horas de marcha.</p></li>
+<li data-escena="5" data-hora="13 sep · noche"><h3>La defensa</h3>
+<p>Estrada cuenta con unos ciento sesenta hombres, muchos armados con viejos fusiles de chispa.</p>
+<p>El capitán Liberato Cisne defiende el corral de piedra, al oeste de la casa.</p>
+<p>El capitán Francisco de Dios Avilés ocupa la casa hacienda, de gruesos muros de adobe.</p>
+<p>En el corral de madera, el punto más débil, se sitúa el capitán Francisco Sacasa.</p>
+<p>La orden de Estrada es clara: nadie dispara hasta tener al enemigo a tiro de pistola.</p></li>
+<li data-escena="6" data-hora="14 sep · 06:00"><h3>El alba</h3>
+<p>Domingo 14 de septiembre. Antes de que raye el alba, la neblina cubre los llanos.</p>
+<p>El vigía, el cabo Faustino Salmerón, da la alarma: el enemigo se acerca por el camino de Tipitapa.</p>
+<p>Según el parte de Estrada, son más de doscientos filibusteros, armados con rifles y revólveres de seis tiros.</p></li>
+<li data-escena="7" data-hora="14 sep · 07:00"><h3>El asalto</h3>
+<p>Hacia las siete de la mañana, Cole divide su fuerza en tres columnas.</p>
+<p>Cole y el teniente Robert Milligan cargan contra el corral de madera.</p>
+<p>El mayor O’Neal ataca de frente, contra la casa.</p>
+<p>El capitán Lewis Watkins presiona por el flanco, donde el corral de madera se une al cerco de piedra.</p>
+<p>Los defensores aguantan y responden casi a quemarropa.</p></li>
+<li data-escena="8" data-hora="14 sep · mañana"><h3>La piedra de Andrés Castro</h3>
+<p>En lo más duro del combate, un filibustero salta la trinchera.</p>
+<p>El sargento primero Andrés Castro tiene la carabina sin fuego. Toma una piedra y lo derriba.</p>
+<p>Estrada lo dejó escrito en su parte de guerra, y el gesto se volvió símbolo de un pueblo que se defiende con lo que tiene.</p></li>
+<li data-escena="9" data-hora="14 sep · 09:00"><h3>El corral cede</h3>
+<p>Hacia las nueve, la presión rompe la defensa del corral de madera.</p>
+<p>Estrada envía refuerzos con Miguel Vélez, Alejandro Eva y Adán Solís para sostener el punto a toda costa.</p>
+<p>A las diez, los filibusteros se reagrupan para el golpe final.</p></li>
+<li data-escena="10" data-hora="14 sep · 10:00"><h3>Por la retaguardia</h3>
+<p>Recuperar el corral atacando de frente es imposible. Estrada decide golpear por detrás.</p>
+<p>El capitán Liberato Cisne, el teniente José Siero y el subteniente Juan Fonseca salen ocultos por el monte con sus escuadras.</p>
+<p>Caen sobre la retaguardia enemiga al grito de ¡Viva Nicaragua!</p>
+<p>Según algunos testigos, una manada de potros y yeguas baja en tropel del cerro, y los filibusteros creen que llega la caballería.</p></li>
+<li data-escena="11" data-hora="14 sep · 11:00"><h3>La desbandada</h3>
+<p>Atrapados entre dos fuegos, los filibusteros rompen filas y huyen en desbandada hacia San Ildefonso y Tipitapa.</p>
+<p>Bartolo Sandoval y Miguel Vélez los persiguen montados en las bestias capturadas.</p>
+<p>Byron Cole, perdido en la huida, muere a manos de sus perseguidores. Los relatos no coinciden en el día ni en quién lo mató.</p>
+<p>En el campo quedan rifles, revólveres, cartucheras y caballos. El parte cuenta veintisiete filibusteros muertos.</p></li>
+<li data-escena="12" data-hora="Memoria"><h3>¿Qué cuentan las fuentes?</h3>
+<p>La victoria es indiscutible, pero los relatos difieren en los detalles.</p>
+<p>Estrada habla de más de doscientos atacantes y de cuatro horas de fuego. El historiador Patrick Werner sostiene que el choque decisivo pudo durar apenas unos diez minutos.</p>
+<p>Algunos testigos atribuyen el flanqueo a Bartolo Sandoval o a Patricio Centeno, y la estampida de caballos no aparece en el parte de Estrada.</p>
+<p>San Jacinto levantó la moral de quienes combatían a Walker. La guerra siguió hasta su rendición, el 1 de mayo de 1857.</p>
+<p>Hoy, cada 14 de septiembre, Nicaragua recuerda esta defensa colectiva.</p></li>
+</ol>
+<p class="anim-fuentes">Basado en el parte de José Dolores Estrada (1856), los testimonios de Alejandro Eva, Carlos Alegría y José Siero, la síntesis del <a href="../biblioteca/mined/">MINED</a>, el estudio de <a href="../biblioteca/arellano/">Jorge Eduardo Arellano</a> y P. Werner, «Una teoría alternativa de la Batalla de San Jacinto» (Diálogos, 2008). El mapa es un esquema didáctico sin escala.</p>
+</details>
+</section>
+
+<script src="../js/batalla.js?v=W2ghSaLplSX2W_bYJSc-n2tNMEtH5KaADGrobgZxrjI" defer></script>
 <section id="recorrido" class="battle-story section-wrap">
     <aside class="battle-map-panel"><div class="map-heading"><p class="eyebrow">EL ESCENARIO / SAN JACINTO</p><span data-phase-label>01 · La defensa</span></div><div class="tactical-map" data-phase="0"><svg viewBox="0 0 600 520" role="img" aria-labelledby="maptitle mapdesc" xmlns="http://www.w3.org/2000/svg">
 <title id="maptitle">Esquema de las etapas de San Jacinto</title><desc id="mapdesc">La casa hacienda y los corrales al centro, la defensa en azul, el ataque en rojo y la maniobra de flanqueo y caballada en ocre. Los controles permiten destacar cada etapa.</desc>

@@ -31,6 +31,17 @@ public class MuseoTests(MuseoFactory factory)
         Assert.Contains("script-src 'self'",response.Headers.GetValues("Content-Security-Policy").Single());
     }
 
+    [Fact] public async Task BatallaIncluyeAnimacionNarrada()
+    {
+        using var client=factory.Cliente(); var html=await client.GetStringAsync("/batalla");
+        Assert.Contains("id=\"animacion\"",html); Assert.Contains("data-anim-stage",html);
+        Assert.Equal(12,Regex.Matches(html,"data-escena=\"\\d+\"").Count);
+        Assert.Contains("js/batalla.js",html);
+        foreach(var name in new[]{"Andrés Castro","Liberato Cisne","Byron Cole","Faustino Salmerón","flecheros"}) Assert.Contains(name,html);
+        Assert.DoesNotContain(" style=\"",html); Assert.DoesNotMatch("<script>[^<]",html);
+        Assert.True(html.IndexOf("id=\"animacion\"",StringComparison.Ordinal) < html.IndexOf("id=\"recorrido\"",StringComparison.Ordinal));
+    }
+
     [Fact] public async Task DatosOrdenadosYvinculadosAFuentes()
     {
         using var scope=factory.Services.CreateScope(); var db=scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();

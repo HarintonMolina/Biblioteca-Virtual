@@ -30,7 +30,7 @@ La sección de imágenes admite JPG, PNG y WebP de hasta 5 MB, comprueba su firm
 
 ## Museo público y GitHub Pages
 
-`docs` contiene 39 páginas públicas, sus imágenes y tipografías locales, y el catálogo para búsqueda. El recorrido de la batalla, los filtros, las referencias, la lectura en voz disponible en el navegador y el reto funcionan en el cliente. El mejor resultado del reto se guarda únicamente en el dispositivo del visitante.
+`docs` contiene 39 páginas públicas, sus imágenes y tipografías locales, y el catálogo para búsqueda. La animación narrada de la batalla (mapa de pergamino con voz del navegador y subtítulos), el recorrido de la batalla, los filtros, las referencias, la lectura en voz disponible en el navegador y el reto funcionan en el cliente. El mejor resultado del reto se guarda únicamente en el dispositivo del visitante.
 
 GitHub Pages no ejecuta .NET ni PostgreSQL. Su edición pública es de lectura y no incluye rutas de administración. El CRUD y los archivos subidos pertenecen a la aplicación con Docker. Los cambios posteriores en la base de datos no se sincronizan por sí solos con la edición estática.
 
