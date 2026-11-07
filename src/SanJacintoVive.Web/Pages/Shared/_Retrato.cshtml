@@ -1,0 +1,8 @@
+@model Personaje
+@if (Retratos.Obtener(Model.Slug) is { } retrato)
+{
+    <figure class="biography-portrait archival-portrait">
+        <img src="@retrato.Ruta" width="800" height="1000" alt="@retrato.Descripcion" />
+        <figcaption>@retrato.Credito @if(retrato.Fuente is not null){<a href="@retrato.Fuente" target="_blank" rel="noopener noreferrer">Referencia visual ↗</a>} @if(Model.Slug == "castro"){<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0 ↗</a>}</figcaption>
+    </figure>
+}

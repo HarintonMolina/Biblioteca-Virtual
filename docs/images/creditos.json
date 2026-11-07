@@ -17,5 +17,68 @@
     "file": "hacienda.svg",
     "author": "San Jacinto Vive",
     "type": "Interpretación gráfica del entorno; no es una fotografía ni una reconstrucción exacta"
+  },
+  {
+    "file": "retratos/estrada.webp",
+    "type": "Ilustración generada o reinterpretada con IA en estilo de grabado; ver ficha para origen",
+    "date": "2026-10-30",
+    "source": "https://commons.wikimedia.org/wiki/File:José_Dolores_Estrada.jpg",
+    "originalLicense": "Dominio público",
+    "changes": "Reinterpretación y aumento del detalle con IA; conversión a WebP"
+  },
+  {
+    "file": "retratos/walker.webp",
+    "type": "Ilustración generada o reinterpretada con IA en estilo de grabado; ver ficha para origen",
+    "date": "2026-10-30",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_William_Walker_by_George_Dury_(cropped).jpg",
+    "author": "George Dury / Tennessee State Museum",
+    "originalLicense": "Dominio público",
+    "changes": "Reinterpretación en grabado con IA; conversión a WebP"
+  },
+  {
+    "file": "retratos/castro.webp",
+    "type": "Ilustración generada o reinterpretada con IA en estilo de grabado; ver ficha para origen",
+    "date": "2026-10-30",
+    "source": "https://commons.wikimedia.org/wiki/File:Estatua_de_Andres_Castro_Estrada.png",
+    "author": "IsaMAG27",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Recreación con IA de iconografía conmemorativa, nuevo encuadre y estilo de grabado; no es un retrato del natural"
+  },
+  {
+    "file": "retratos/flecheros.webp",
+    "type": "Ilustración generada o reinterpretada con IA en estilo de grabado; ver ficha para origen",
+    "date": "2026-10-30",
+    "source": "Recreación artística; no se verificó retrato individual de referencia"
+  },
+  {
+    "file": "retratos/cole.webp",
+    "type": "Ilustración generada o reinterpretada con IA en estilo de grabado; ver ficha para origen",
+    "date": "2026-10-30",
+    "source": "Recreación artística; no se verificó retrato individual de referencia"
+  },
+  {
+    "file": "retratos/oneal.webp",
+    "type": "Ilustración generada o reinterpretada con IA en estilo de grabado; ver ficha para origen",
+    "date": "2026-10-30",
+    "source": "Recreación artística; no se verificó retrato individual de referencia"
+  },
+  {
+    "file": "retratos/cisne.webp",
+    "type": "Ilustración generada o reinterpretada con IA en estilo de grabado; ver ficha para origen",
+    "date": "2026-10-30",
+    "source": "Recreación artística; no se verificó retrato individual de referencia"
+  },
+  {
+    "file": "retratos/siero.webp",
+    "type": "Ilustración generada o reinterpretada con IA en estilo de grabado; ver ficha para origen",
+    "date": "2026-10-30",
+    "source": "Recreación artística; no se verificó retrato individual de referencia"
+  },
+  {
+    "file": "retratos/fonseca.webp",
+    "type": "Ilustración generada o reinterpretada con IA en estilo de grabado; ver ficha para origen",
+    "date": "2026-10-30",
+    "source": "Recreación artística; no se verificó retrato individual de referencia"
   }
 ]
